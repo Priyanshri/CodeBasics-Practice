@@ -1,0 +1,126 @@
+learn python from geeksforgeeks : https://www.geeksforgeeks.org/python/python-programming-language-tutorial/
+
+
+Git Bash commands:
+
+
+git --version	: shows the version of git
+git clone url   : clones the repository on local machine
+git status      : shows the status of the repository code
+git add filename    : adds the new or changed file to your working directory to the Git staging area
+git commit -m "message"     : commits the changes with a message
+git add .	: adds all the files in the current directory to the Git staging area
+
+git init    : used to create a new local repository
+git remote add origin url   : adds a remote repository
+git remote -v   : shows the remote repository url(to verify remote)
+
+
+git branch     : to check the branch (github default branch is master)
+git branch -M main     : to rename the branch
+git branch -a	: shows all the branches in the repository
+
+git checkout branch-name   : to navigate to a different branch
+git checkout -b branch-name   : to create a new branch and navigate to it
+git branch -d branch-name   : to delete a branch
+
+----------------------------
+//WAY TO Mergeing code
+1.
+git diff branch-name : to compare commits,branches,files&more
+git merge branch-name : to merge the changes from a branch into the current branch
+
+2.
+create a PR(pull repository)
+-----------------------------
+
+git push origin main    : pushes the local repo changes to the remote repository
+git push -u origin main    : pushes the local repo changes to the remote repository and sets the upstream tracking information  (creates  short form for future)
+git pull origin main    : pulls the remote repo changes to the local repository
+
+--------------------------------------------------------
+UNDO CHANGES:
+(case1)= staged changes
+        git reset filename : unstage the file
+        git reset : unstage all files
+(case2)= commited changes(for 1 commit)
+        git reset HEAD-1 : undo the last commit
+(case3)= commited changes(for multiple commits)
+        git reset commit-hash : undo the commit with the given hash
+        git reset --hard commit-hash : undo the commit with the given hash and discard all changes
+--------------------------------------------------------
+
+ls      : shows all the folders and directories
+ls -a   : shows all the folders and directories including hidden ones
+
+clear	:clears all the commands
+pwd 	: can get working directory
+
+
+cd     : change directory
+cd ~	: change directory to home directory
+cd ..	: change directory to parent directory
+cd /	: change directory to root directory
+cd ~user	: change directory to user's home directory
+cd /home/user   : change directory to user's home directory
+mkdir foldername    : makes a new directory
+
+pip install package     : install package
+pip uninstall package	: uninstall package
+pip freeze	    : shows all the packages installed
+pip list	    : shows all the packages installed
+
+jupyter notebook	: starts jupyter notebook
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+**CODEBASICS**
+
+(these are small commands used in Git Bash. Here jupyter notebook is used for coding and understanding.
+ All the codes of this course are avalaible in /c/Code)
+
+
+
+1.  to go through the directory in c drvie and then Code folder: (main step 1st)
+    cd /c/code
+
+2.  got to jupyter notebook : (2nd step if coding in jupyter notebook)
+    python -m notebook      or,     jupyter notebook
+
+to install numpy:
+pip install numpy
+
+to install pandas:
+pip install pandas
+(fun fact) to install a certain version : pip install pandas==1.5.3
+
+to uninstall numpy:
+pip uninstall numpy
+
+look at the version you use of numpy :
+pip freeze | grep numpy
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+GitHub WorkFlow :
+
+1. Make Github repo
+2. Clone in local machine
+3. Make changes in local machine
+4. Add changes to repo
+5. Commit changes
+6. Push changes to repo
+
+
+git add .
+git commit -m "message"
+git push -u origin main  (for once after then every time you can use git push)
+
+
