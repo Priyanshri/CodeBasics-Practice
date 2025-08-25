@@ -122,5 +122,5 @@ GitHub WorkFlow :
 git add .
 git commit -m "message"
 git push -u origin main  (for once after then every time you can use git push)
-
+git status      (to check the status if any have to commit or not)
 
